@@ -2,13 +2,22 @@
 
 A minimalist boilerplate for creating Solidity Smart Contracts using truffle, ethlint and eslint.
 
-## Usage
+## Installation
 
-Installation:
+Install truffle globally:
 
 ```bash
+yarn global add truffle
+```
+
+Install dependencies:
+
+```bash
+# After cloning repository
 yarn
 ```
+
+## Usage
 
 Run tests:
 
