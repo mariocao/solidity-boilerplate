@@ -4,12 +4,6 @@ A minimalist boilerplate for creating Solidity Smart Contracts using truffle, et
 
 ## Installation
 
-Install truffle globally:
-
-```bash
-yarn global add truffle
-```
-
 Install dependencies:
 
 ```bash
@@ -30,7 +24,9 @@ Run development network (127.0.0.1:8545):
 
 ```bash
 # Run the network with ganache
-yarn ganache
+yarn run:dev
+# Deploy smart contracts
+yarn deploy:dev
 # Run the tests
 yarn test:dev
 # Open the truffle console

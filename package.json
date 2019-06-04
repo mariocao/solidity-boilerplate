@@ -5,10 +5,6 @@
   "main": "",
   "scripts": {
     "test": "truffle test --network test",
-    "ganache": "ganache-cli",
-    "test:dev": "truffle test --network development",
-    "console:dev": "truffle console --network development",
-    "postinstall": "npm run compile-contracts",
     "compile-contracts": "truffle compile --all",
     "fmt": "solium -d contracts && eslint ./test",
     "fmt!": "solium -d contracts --fix && eslint ./test --fix",
@@ -16,7 +12,11 @@
     "solium:fix": "solium -d contracts --fix",
     "lint": "eslint ./test",
     "lint:fix": "eslint ./test --fix",
-    "coverage": "solidity-coverage"
+    "coverage": "solidity-coverage",
+    "run:dev": "ganache-cli -s 12345",
+    "deploy:dev": "truffle deploy --network development",
+    "test:dev": "truffle test --network development",
+    "console:dev": "truffle console --network development"
   },
   "author": "Mario Cao <mariocao@witnet.foundation>",
   "repository": {
@@ -33,7 +33,7 @@
   ],
   "license": "GPL-3.0",
   "dependencies": {
-    "truffle-hdwallet-provider": "^1.0.6"
+    "truffle-hdwallet-provider": "^1.0.7"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -43,7 +43,9 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "ethlint": "^1.2.4",
-    "ganache-cli": "^6.4.2",
-    "solidity-coverage": "^0.5.11"
+    "ganache-cli": "^6.4.3",
+    "solidity-coverage": "^0.5.11",
+    "solium": "^1.0.0",
+    "truffle": "^5.0.20"
   }
 }
