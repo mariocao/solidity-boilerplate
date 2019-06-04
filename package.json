@@ -4,7 +4,7 @@
   "description": "A boilerplate for Smart Contracts creation",
   "main": "",
   "scripts": {
-    "test": "truffle test --network test",
+    "test": "truffle test",
     "compile-contracts": "truffle compile --all",
     "fmt": "solium -d contracts && eslint ./test",
     "fmt!": "solium -d contracts --fix && eslint ./test --fix",
