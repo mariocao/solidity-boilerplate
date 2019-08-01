@@ -18,7 +18,7 @@
     "test:dev": "truffle test --network development",
     "console:dev": "truffle console --network development"
   },
-  "author": "Mario Cao <mariocao@witnet.foundation>",
+  "author": "Mario Cao <mariocao@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/mariocao/solidity-boilerplate.git"
@@ -43,8 +43,8 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "ethlint": "^1.2.4",
-    "ganache-cli": "^6.4.3",
-    "solidity-coverage": "^0.5.11",
+    "ganache-cli": "^6.4.4",
+    "solidity-coverage": "^0.6.0-beta.5",
     "solium": "^1.0.0",
     "truffle": "^5.0.20"
   }
